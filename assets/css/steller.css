@@ -11582,7 +11582,7 @@ pre {
   border-right: 1px solid #dee2e6;
 }
 
-.header .widget .widget-item:last-child {
+.header .widget .widget-item:nth-child(3) { /* :last-child is not working*/
   border-right: 0;
 }
 
@@ -11654,4 +11654,16 @@ pre {
 
 .section.bg-gray {
   background: white;
+}
+
+.section-st-w {
+  max-width: 576px;
+  margin: auto;
+}
+
+@media screen and (max-width: 577px) {
+  .row-rev {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
 }
